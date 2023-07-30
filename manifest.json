@@ -1,0 +1,23 @@
+{
+  "name": "YT Shorts Controls",
+  "version": "1.0.0",
+  "description": "YT Shorts keyboard control",
+  "manifest_version": 3,
+  "author": "Nikhil Rai",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "YT Shorts Controls"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["scripts.js"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
